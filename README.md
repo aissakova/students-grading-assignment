@@ -28,6 +28,8 @@ Methods Used
   Normalization was done using:
   scaler = MinMaxScaler()
   df[num_cols] = scaler.fit_transform(df[num_cols])
+-Data Discretization
+  Categorized total scores into "Low", "Medium", and "High"
 
 Output
 - R² Score and Mean Squared Error printed to evaluate model
