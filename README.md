@@ -6,6 +6,7 @@ Files Included
 - `student_grades_analysis.ipynb`: Jupyter Notebook version
 - `student_grades_analysis.py`: Python script version
 - `Students_Grading_Dataset.csv`: Dataset used for modeling
+- `total_score_histogram.png`: Output histogram
 
 Methods Used
 - Data Cleaning
@@ -31,6 +32,10 @@ Methods Used
 -Data Discretization
   Categorized total scores into "Low", "Medium", and "High"
 
+Visualizations
+- A histogram showing the distribution of Total Scores
+
+  
 Output
 - R² Score and Mean Squared Error printed to evaluate model
 - Histogram showing distribution of total scores
