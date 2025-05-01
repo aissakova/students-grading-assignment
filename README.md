@@ -1,12 +1,14 @@
 Student Grades Analysis
 
-This project is part of a data preprocessing and modeling assignment using the Students Grading Dataset from Kaggle.
+This project is part of a data preprocessing and modeling assignment using the Students Grading Dataset from Kaggle. It contains data cleaning, transformation, reduction, visualization, and modeling techniques to explore and predict student performance.
 
 Files Included
-- `student_grades_analysis.ipynb`: Jupyter Notebook version
-- `student_grades_analysis.py`: Python script version
+- `student_grades_analysis.ipynb`: Jupyter Notebook, initial regression model
+- `Student_grades_analysis_final_(1).ipynb`: Final Jupyter Notebook with classification model and full preprocessing
+- `student_grades_analysis.py`: Python script version, core code only
 - `Students_Grading_Dataset.csv`: Dataset used for modeling
-- `total_score_histogram.png`: Output histogram
+- `total_score_histogram.png`: Histogram from regression phase
+- `total_score_histogram_.png`: Histogram from classification phase
 
 Methods Used
 - Data Cleaning
@@ -33,9 +35,24 @@ Methods Used
   Categorized total scores into "Low", "Medium", and "High"
 
 Visualizations
-- A histogram showing the distribution of Total Scores
+- total_score_histogram.png: Histogram of Total Scores before classification
+- total_score_histogram_.png: Histogram after discretization (Score_Level)
 
   
-Output
-- R² Score and Mean Squared Error printed to evaluate model
-- Histogram showing distribution of total scores
+Modeling
+- Multiple Linear Regression
+- Evaluated using:
+    R² Score
+    Mean Squared Error
+
+Random Forest Classifier
+- Target: Score_Level (Low/Medium/High)
+- Accuracy: ~87%
+- Evaluation:
+    Classification Report
+    Confusion Matrix
+    Feature Importance Plot
+
+Results Summary
+- Final Score and Study Hours were the most important predictors
+- Classification model successfully categorized students into performance levels
